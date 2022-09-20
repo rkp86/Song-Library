@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- //Roma Patel - rkp86
+//Omer Farooq - ofs9 -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="531.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
+   <children>
+      <Button fx:id="addbutton" layoutX="330.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#addSong" prefHeight="37.0" prefWidth="92.0" text="ADD">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deletebutton" layoutX="93.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#removeSong" prefHeight="37.0" prefWidth="92.0" text="DELETE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="52.0" layoutY="33.0" prefHeight="28.0" prefWidth="188.0" text="Welcome To Your " textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="editbutton" layoutX="338.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#editSong" prefHeight="37.0" prefWidth="92.0" text="EDIT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="322.0" layoutY="32.0" prefHeight="30.0" prefWidth="123.0" text="Song Details">
+         <font>
+            <Font name="Comic Sans MS Italic" size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="272.0" layoutY="71.0" prefHeight="162.0" prefWidth="70.0" spacing="20.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="61.0" text="Name: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="61.0" text="Artist: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="61.0" text="Album: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="61.0" text="Year: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="272.0" layoutY="304.0" prefHeight="162.0" prefWidth="70.0" spacing="20.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="61.0" text="Name: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="61.0" text="Artist:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="61.0" text="Album: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="61.0" text="Year:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="330.0" layoutY="304.0" prefHeight="162.0" prefWidth="136.0" spacing="20.0">
+         <children>
+            <TextField fx:id="addname" prefHeight="0.0" prefWidth="100.0" />
+            <TextField fx:id="addartist" prefHeight="0.0" prefWidth="100.0" />
+            <TextField fx:id="addalbum" prefHeight="0.0" prefWidth="100.0" />
+            <TextField fx:id="addyear" prefHeight="0.0" prefWidth="100.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="330.0" layoutY="71.0" prefHeight="162.0" prefWidth="136.0" spacing="20.0">
+         <children>
+            <TextField fx:id="editname" editable="false" prefHeight="0.0" prefWidth="100.0" />
+            <TextField fx:id="editartist" editable="false" prefHeight="0.0" prefWidth="100.0" />
+            <TextField fx:id="editalbum" editable="false" prefHeight="0.0" prefWidth="100.0" />
+            <TextField fx:id="edityear" editable="false" prefHeight="0.0" prefWidth="100.0" />
+         </children>
+      </VBox>
+      <Label layoutX="64.0" layoutY="71.0" prefHeight="30.0" prefWidth="150.0" text="Song Library!" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+      </Label>
+     <ListView fx:id="library" layoutX="39.0" layoutY="113.0" prefHeight="344.0" prefWidth="200.0" /> 
+   </children>
+</AnchorPane>
